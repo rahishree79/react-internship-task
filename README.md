@@ -1,6 +1,6 @@
 # React Internship Tasks
 
-## Task 4 - Stamina Burner
+## Task 2 - Stamina Burner
 
 This project is built using React and Vite.  
 It simulates a coding stamina tracker where stamina decreases when the user clicks the button.
