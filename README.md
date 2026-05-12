@@ -1,18 +1,45 @@
-# React + Vite
+# React Internship Tasks
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Task 4 - Stamina Burner
 
-Currently, two official plugins are available:
+This project is built using React and Vite.  
+It simulates a coding stamina tracker where stamina decreases when the user clicks the button.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+# Virtual DOM Explanation
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+React uses the Virtual DOM to track changes in the stamina state efficiently.  
+When the stamina value updates, React compares the updated Virtual DOM with the previous version and updates only the changed elements in the real DOM instead of reloading the entire page.
 
-Note: This will impact Vite dev & build performances.
+---
 
-## Expanding the ESLint configuration
+# Modulus Logic for 5th Click Bug
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```javascript
+if (totalTaps % 5 === 0) {
+    remainingEnergy = energy - 15;
+}
+else {
+    remainingEnergy = energy - 2;
+}
+```
+
+---
+
+# Differences Between Vite and Create React App (CRA)
+
+| Vite | Create React App |
+|------|------------------|
+| Faster startup time | Slower startup time |
+| Uses native ES modules | Uses Webpack |
+| Better hot reload performance | Slower hot reload |
+
+---
+
+# Technologies Used
+
+- React
+- JavaScript
+- Vite
+- CSS
